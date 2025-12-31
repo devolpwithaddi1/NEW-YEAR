@@ -103,7 +103,7 @@
             opacity: 0.6;
         }
 
-        /* Fireworks dots */
+        /* Fireworks sparks */
         .spark {
             position: absolute;
             width: 6px;
@@ -138,11 +138,14 @@
         <h1>Happy New Year 2026 🎉</h1>
         <h2>Warmest wishes to the <span class="family-name">Arimis Family</span></h2>
         <p>
-            As we step into 2026, may this year bring you renewed hope, 
+            As we step into 2026, may this year bring renewed hope,
             endless joy, good health, success, and unforgettable moments together.
-            Thank you for being a source of love, strength, and inspiration.
         </p>
         <a href="#message" class="btn">A Special Message </a>
+
+        <p style="opacity:0.6; font-size:0.9rem; margin-top:20px;">
+            
+        </p>
     </div>
 
     <!-- Fireworks sparks -->
@@ -178,6 +181,28 @@
 <footer>
     Made with ❤️ for the Arimis Family — New Year 2026
 </footer>
+
+<!-- 🎵 BACKGROUND MUSIC -->
+<audio id="bgMusic" autoplay muted loop>
+    <source src="newyear.mp3" type="audio/mpeg">
+    <source src="newyear.ogg" type="audio/ogg">
+</audio>
+
+<script>
+    const music = document.getElementById("bgMusic");
+
+    function enableSound() {
+        music.muted = false;
+        music.volume = 0.5;
+        document.removeEventListener("click", enableSound);
+        document.removeEventListener("scroll", enableSound);
+        document.removeEventListener("keydown", enableSound);
+    }
+
+    document.addEventListener("click", enableSound);
+    document.addEventListener("scroll", enableSound);
+    document.addEventListener("keydown", enableSound);
+</script>
 
 </body>
 </html>
