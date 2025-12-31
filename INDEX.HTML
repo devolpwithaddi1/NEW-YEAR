@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2026 | Arimis Family</title>
+
+    <style>
+        :root {
+            --gold: #ffd700;
+            --dark: #0a0a0a;
+            --light: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #1a1a1a, #000);
+            color: var(--light);
+            overflow-x: hidden;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        .hero {
+            max-width: 900px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            color: var(--gold);
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: clamp(1.3rem, 3vw, 2rem);
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .family-name {
+            font-weight: bold;
+            color: var(--gold);
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, var(--gold), #ffae00);
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .card {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        /* Fireworks dots */
+        .spark {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+            border-radius: 50%;
+            animation: float 6s linear infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-120vh) scale(0.2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <h1>Happy New Year 2026 🎉</h1>
+        <h2>Warmest wishes to the <span class="family-name">Arimis Family</span></h2>
+        <p>
+            As we step into 2026, may this year bring you renewed hope, 
+            endless joy, good health, success, and unforgettable moments together.
+            Thank you for being a source of love, strength, and inspiration.
+        </p>
+        <a href="#message" class="btn">A Special Message </a>
+    </div>
+
+    <!-- Fireworks sparks -->
+    <script>
+        for (let i = 0; i < 40; i++) {
+            const spark = document.createElement("div");
+            spark.className = "spark";
+            spark.style.left = Math.random() * 100 + "vw";
+            spark.style.bottom = "-10px";
+            spark.style.animationDelay = Math.random() * 5 + "s";
+            spark.style.animationDuration = 4 + Math.random() * 4 + "s";
+            document.body.appendChild(spark);
+        }
+    </script>
+</header>
+
+<section id="message">
+    <div class="card">
+        <h2> To Family, Love & New Beginnings </h2>
+        <p>
+            The Arimis family represents unity, resilience, and warmth.
+            May 2026 strengthen your bonds, fulfill your dreams,
+            and reward every effort you make for one another.
+        </p>
+        <p>
+            Here’s to laughter around the table, peace in every home,
+            success in every step, and blessings that overflow.
+        </p>
+        <p><strong>Cheers to a brighter, bolder, and happier 2026! 🥂</strong></p>
+    </div>
+</section>
+
+<footer>
+    Made with ❤️ for the Arimis Family — New Year 2026
+</footer>
+
+</body>
+</html>
